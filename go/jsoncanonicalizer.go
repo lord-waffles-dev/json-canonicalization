@@ -13,7 +13,6 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
- 
 // This package transforms JSON data in UTF-8 according to:
 // https://tools.ietf.org/html/draft-rundgren-json-canonicalization-scheme-02
 

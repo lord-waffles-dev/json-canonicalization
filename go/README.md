@@ -1,12 +1,11 @@
 ## JSON Canonicalizer for Go
 
-The [jsoncanonicalizer](src/webpki.org/jsoncanonicalizer)
-folder contains the source code for a 
-JCS (RFC 8785) compliant JSON canonicalizer written in Go.
+The jsoncanonicalizer package in this folder contains the source code for a 
+JCS (RFC 8785) compliant JSON canonicalizer written in Go. It is a Go module.
 
 ### Building and testing
 
-- Set GOPATH to this directory.
+- This package uses Go modules. No GOPATH setup is required.
 
 - For running `verify-numbers.go` you need to download a 3Gb+ file with test
 data described in the root directory [testdata](../testdata).  This file can be stored in
@@ -15,7 +14,6 @@ any directory and requires updating the file path in `verify-numbers.go`.
 - Perform the commands:
 ```code
 $ cd test
-$ go build webpki.org/jsoncanonicalizer
 $ go run verify-canonicalization.go
 $ go run verify-numbers.go
 ```
@@ -24,7 +22,7 @@ $ go run verify-numbers.go
 ### Using the JSON canonicalizer
 
 ```go
-import "webpki.org/jsoncanonicalizer"
+import jsoncanonicalizer "github.com/lord-waffles-dev/json-canonicalization/go"
 
 func Transform(jsonData []byte) (result []byte, e error)
 ```

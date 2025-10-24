@@ -26,7 +26,7 @@ import (
     "math"
     "fmt"
     "os"
-    "webpki.org/jsoncanonicalizer"
+    jsoncanonicalizer "github.com/lord-waffles-dev/json-canonicalization/go"
 )
 
 func check(e error) {

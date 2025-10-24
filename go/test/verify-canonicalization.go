@@ -25,7 +25,7 @@ import (
     "runtime"
     "path/filepath"
     "bytes"
-    "webpki.org/jsoncanonicalizer"
+    jsoncanonicalizer "github.com/lord-waffles-dev/json-canonicalization/go"
 )
 
 func check(e error) {
